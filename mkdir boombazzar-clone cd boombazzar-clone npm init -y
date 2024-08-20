@@ -1,0 +1,13 @@
+ boombazzar-clone
+│   server.js
+│   package.json
+└───views
+│   │   index.ejs
+│   │   topup.ejs
+│   │   contact.ejs
+└───public
+    ├───css
+    │       style.css
+    ├───images
+    └───js
+            main.js
