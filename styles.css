@@ -62,4 +62,96 @@ nav ul li a:hover {
 
 #notice {
     padding: 20px;
-    background-color: #f4f4f4
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#games {
+    padding: 20px;
+    text-align: center;
+}
+
+.game-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game {
+    width: 200px;
+    margin: 20px;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: block;
+    background-color: #ff4500;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff6347;
+}
+
+#promo-banners {
+    padding: 20px;
+    text-align: center;
+}
+
+.banners img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+#app-download {
+    text-align: center;
+    padding: 20px;
+}
+
+#app-download img {
+    width: 200px;
+    height: auto;
+}
+
+#contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile-Friendly Styles */
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10
