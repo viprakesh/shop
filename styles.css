@@ -1,8 +1,9 @@
-/* Base Styles */
+ /* Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
@@ -10,10 +11,25 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo img {
     height: 60px;
+}
+
+nav {
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 nav ul {
@@ -32,6 +48,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
 }
 
 #banner img {
@@ -41,166 +62,4 @@ nav ul li a {
 
 #notice {
     padding: 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-#games {
-    padding: 20px;
-    text-align: center;
-}
-
-.game-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.game {
-    width: 200px;
-    margin: 20px;
-}
-
-.game img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    margin-bottom: 10px;
-}
-
-#promo-banners {
-    padding: 20px;
-    text-align: center;
-}
-
-.banners img {
-    width: 300px;
-    height: auto;
-    margin: 10px;
-}
-
-#app-download {
-    text-align: center;
-    padding: 20px;
-}
-
-#app-download img {
-    width: 200px;
-    height: auto;
-}
-
-#contact {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
-
-.contact-links a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Mobile-Friendly Styles */
-@media only screen and (max-width: 768px) {
-    /* Navigation - Stack items vertically */
-    nav ul {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    /* Adjust game items for mobile */
-    .game-items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .game {
-        width: 90%;
-        margin: 10px 0;
-    }
-
-    /* Promo banners - Stack vertically */
-    .banners img {
-        width: 90%;
-        margin: 15px 0;
-    }
-
-    /* App download section */
-    #app-download img {
-        width: 150px;
-    }
-}
-
-/* Extra Small Devices (Phones) */
-@media only screen and (max-width: 480px) {
-    header .logo img {
-        height: 40px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    #banner img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Game and promo sections */
-    .game-items {
-        flex-direction: column;
-    }
-
-    .game {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .banners img {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    #app-download img {
-        width: 120px;
-    }
-
-    #contact {
-        padding: 15px;
-    }
-
-    /* Adjust font sizes for small screens */
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .contact-links a {
-        display: block;
-        margin: 5px 0;
-    }
-}
+    background-color: #f4f4f4
