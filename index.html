@@ -1,113 +1,100 @@
-<!doctype html>
-<html>
-
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Rakesh Mallah</title>
-
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Technology Expert from Nepal - Bishworaj Poudel">
-    <meta name="description" content="Nepali Software Developer, Nepali Website Developer, Nepali Tech Channel">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style type="text/css">
-        body {
-            background-color: #f0f0f2;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-        }
-
-        .brpclass {
-            width: 390px;
-            margin: 5em auto;
-            padding: 2em;
-            background-color: #fdfdff;
-            border-radius: 0.5em;
-            box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
-        }
-        a{
-            color: orange;
-        }
-
-        a:link,
-        a:visited {
-            color: #38488f;
-            text-decoration: none;
-        }
-
-        @media (max-width: 700px) {
-            div {
-                margin: 0 auto;
-                width: auto;
-            }
-        }
-
-        .fa {
-            padding: 20px;
-            font-size: 30px;
-            width: 30px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 50%;
-        }
-       
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoomBazzar Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      background-color: #444;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+    main {
+      padding: 20px;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="brpclass">
-        <h1>Rakesh Mallah</h1>
-        <p>Med Student , Programmer & Developer</p>
-        <center>
-            <p style="color:orange;" id="blink"><a target = "_blank" href="https://m.me/rakeshmallah.official">Join Online chat [Chat with me] </a></p>
-            <a target="_blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
-            <a target="_blank" href="https://github.com/#" class="fa fa-github"></a>
-            <a target="_blank" href="https://www.facebook.com/rakeshmallah.official/" class="fa fa-facebook"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/#/" class="fa fa-linkedin"></a>
-            <a target="_blank" href="https://www.instagram.com/rakeshmallah.official/" class="fa fa-instagram"></a>
-            <a target="_blank" href="https://play.google.com/store/apps/#" class="fa fa-android"></a>
-        </center>
-    </div>
+  <header>
+    <h1>BoomBazzar Clone</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">TopUp</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+  </nav>
+
+  <main>
+    <section class="banner">
+      <img src="https://admin.boombazzar.com/banners/1724120554.jpg" alt="Banner">
+    </section>
+
+    <section class="products">
+      <div class="product-card">
+        <img src="https://admin.boombazzar.com/products/1719300084.jpeg" alt="Product Image">
+        <h3>Free Fire Uid Topup [BD SERVER]</h3>
+        <p>BDT 100</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://admin.boombazzar.com/products/1719820906.jpg" alt="Product Image">
+        <h3>Unipin Voucher</h3>
+        <p>BDT 500</p>
+        <button>Buy Now</button>
+      </div>
+      <!-- Add more product cards as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 BoomBazzar Clone. All Rights Reserved.</p>
+  </footer>
 </body>
-<!-- Messenger Chat Plugin Code -->
-<div id="fb-root"></div>
-
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
-<script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "1432223343697112");
-    chatbox.setAttribute("attribution", "biz_inbox");
-
-    window.fbAsyncInit = function () {
-        FB.init({
-            xfbml: true,
-            version: 'v12.0'
-        });
-    };
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-    // For Blink 
-
-    var blink = 
-            document.getElementById('blink');
-  
-        setInterval(function () {
-            blink.style.opacity = 
-            (blink.style.opacity == 0 ? 1 : 0);
-        }, 1000);
-</script>
-
 </html>
