@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,14 @@
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header Section with Sticky Navigation -->
     <header>
         <div class="logo">
             <img src="https://admin.boombazzar.com/notices/1724028046.jpg" alt="BoomBazzar Logo">
         </div>
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#topup">TopUp</a></li>
                 <li><a href="#contact">Contact Us</a></li>
@@ -35,27 +36,49 @@
         <p>Unipin Voucher ২৪ ঘন্টাই অর্ডার করতে পারবেন! তবে UID টপআপ সকাল ৫.০০ থেকে রাত ১১.০০ টা পর্যন্ত চালু থাকে। ১৮ বছরের নিচে কেউ অর্ডার করলে অবশ্যই বাবা‌ মায়ের অনুমতি লাগবে।</p>
     </section>
 
-    <!-- Game TopUp Section -->
+    <!-- Game TopUp Section with Call to Action Buttons -->
     <section id="games">
         <h2>Games Top Up</h2>
         <div class="game-items">
             <div class="game">
                 <img src="https://admin.boombazzar.com/products/1719300084.jpeg" alt="Free Fire Uid Topup">
-                <a href="https://boombazzar.com/topup/49/free-fire-idcode-topup-bangladesh-server">Free Fire Uid Topup (BD Server)</a>
+                <a href="https://boombazzar.com/topup/49/free-fire-idcode-topup-bangladesh-server" class="cta-button">Top Up Now</a>
             </div>
             <div class="game">
                 <img src="https://admin.boombazzar.com/products/1719820906.jpg" alt="Unipin Voucher">
-                <a href="https://boombazzar.com/giftvoucher/71/unipin-voucher-bkash-nogod">Unipin Voucher (BDT)</a>
+                <a href="https://boombazzar.com/giftvoucher/71/unipin-voucher-bkash-nogod" class="cta-button">Get Voucher</a>
             </div>
             <div class="game">
                 <img src="https://admin.boombazzar.com/products/1719301518.png" alt="Free Fire Uid topup Indonesia">
-                <a href="https://boombazzar.com/topup/61/freefire-idcode-indonesia">Free Fire Uid Topup (Indonesia)</a>
+                <a href="https://boombazzar.com/topup/61/freefire-idcode-indonesia" class="cta-button">Top Up Indonesia</a>
             </div>
             <div class="game">
                 <img src="https://admin.boombazzar.com/products/1720156961.jpg" alt="Weekly Monthly Offer">
-                <a href="https://boombazzar.com/topup/92/lg-weekly-monthly-offer">Weekly Monthly Offer</a>
+                <a href="https://boombazzar.com/topup/92/lg-weekly-monthly-offer" class="cta-button">Weekly Monthly Offer</a>
             </div>
-            <!-- Add more game items as needed -->
+            <div class="game">
+                <img src="https://admin.boombazzar.com/products/1723299836.png" alt="YouTube Premium">
+                <a href="https://boombazzar.com/topup/101/youtube-premeam-pack" class="cta-button">YouTube Premium</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voucher Section -->
+    <section id="vouchers">
+        <h2>Gift Vouchers</h2>
+        <div class="voucher-items">
+            <div class="voucher">
+                <img src="https://admin.boombazzar.com/products/1719820927.jpg" alt="Weekly Lite Voucher">
+                <a href="https://boombazzar.com/topup/91/apple-weekly-lite" class="cta-button">Weekly Lite (BD)</a>
+            </div>
+            <div class="voucher">
+                <img src="https://admin.boombazzar.com/products/1719454923.jpg" alt="Garena Shell Account">
+                <a href="https://boombazzar.com/giftvoucher/93/lg-garena-sell-account" class="cta-button">Garena Shell (SG)</a>
+            </div>
+            <div class="voucher">
+                <img src="https://admin.boombazzar.com/products/1721234619.png" alt="Garena Shell MY">
+                <a href="https://boombazzar.com/giftvoucher/62/garena-shell-code-my" class="cta-button">Garena Shell (MY)</a>
+            </div>
         </div>
     </section>
 
@@ -95,6 +118,15 @@
         <p>Developed by <a href="https://wa.me/+8801848501553?text=HI,IneeddevelopanwebsitelikeWelfir">Team Mahal</a></p>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
- 
